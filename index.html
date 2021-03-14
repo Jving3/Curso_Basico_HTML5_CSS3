@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Menu Responsive</title>
+	<title>Formulario con Flex</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<meta charset="utf-8">
@@ -9,27 +9,25 @@
 	<script src="https://kit.fontawesome.com/aa7940fe9c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>
-		<nav class="nav">
-			<ul class="nav__ul">
-				<li class="nav__li"><i class="fas fa-home"></i><a href="https://google.com">Inicio</a></li>
-				<li class="nav__li"><i class="fas fa-user-friends"></i><a href="https://google.com">Acerca de Nosotros</a></li>
-				<li class="nav__li"><i class="fas fa-dollar-sign"></i><a href="https://google.com">Gana Dinero</a></li>
-				<li class="nav__li"><i class="fas fa-question"></i><a href="https://google.com">Ayuda</a></li>
-			</ul>
-			<ul class="nav__responsive-ul">
-				<div class="nav__responsive-button-container">
-					<div class="nav__responsive-button fas fa-bars"></div>
+	<div class="flex-container">
+		<form class="form">
+			<div class="form__section">
+				<input type="text" class="form__input" placeholder="Escriba su mail">
+			</div>
+			<div class="form__section">
+				<input type="email" class="form__input" placeholder="Escriba el asunto">
+			</div>
+			<div class="form__section">
+				<input type="submit" class="form__input">
+			</div>
+		</form>
+		<div class="form-img">
+			<div class="img-container">
+				<div>
+					<img src="https://img1.freepng.es/20180414/rfe/kisspng-amnesty-international-usa-email-computer-icons-mes-email-icon-5ad183018f7994.8517345215236800015877.jpg">
 				</div>
-				<div class="nav__li-container">
-					<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="https://google.com">Inicio</a></li>
-					<li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="https://google.com">Sobre Nosotros</a></li>
-					<li class="nav__responsive-li"><i class="fas fa-dollar-sign"></i><a href="https://google.com">Gana Dinero</a></li>
-					<li class="nav__responsive-li"><i class="fas fa-question"></i><a href="https://google.com">Ayuda</a></li>
-				</div>	
-			</ul>
-		</nav>
-	</header>
-
+			</div>
+		</div>
+	</div>
 </body>
 </html>
