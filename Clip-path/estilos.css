@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.element{
+    width: 300px;
+    height: 300px;
+    background: tomato;
+    margin: 40px auto;
+    clip-path: circle(50% at center center);
+                /* tamaño     en X  en Y */
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%); */
+
+    transition: all .3s;
+}
+
+.element:hover{
+    /* clip-path: circle(100% at 30% center); */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
